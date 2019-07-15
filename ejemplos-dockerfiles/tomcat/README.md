@@ -11,15 +11,15 @@ Este es un ejemplo básico de *construir* una imagen de Tomcat usando *Dockerfil
 
 Para clonar tu proyecto:  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git clone https://github.com/richardqa/docker-examples
+git clone https://github.com/kevindan/test-tomcat.git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Construir una imagen usando el proyecto clonado:
 
-cd docker-examples/
+cd test-tomcat/ejemplos-dockerfiles/tomcat
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-docker build -t richardqa/mitomcat:v1 .
+docker build -t kevindan/mitomcat:v1 .
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Te autenticas con tu cuenta de Docker Hub y creas un repositorio de Tomcat público.
@@ -32,7 +32,7 @@ docker build -t richardqa/mitomcat:v1 .
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 docker login
-docker push richardqa/mitomcat:v1
+docker push kevindan/mitomcat:v1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Ejecutar un contenedor llamado Tomcat usando la imagen que construiste:
